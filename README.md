@@ -2,7 +2,7 @@
 
 Java知识体系的书籍笔记分享
 
-![Image text](https://github.com/laoyouji1018/JavaQaaQ/blob/master/images/someday.png?raw=true)
+![Image text](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/images/someday.png?raw=true)
 
 # 目录
 
