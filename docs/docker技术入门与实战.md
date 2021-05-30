@@ -1,4 +1,4 @@
-# 基础入门
+基础入门
 
 ## 安装配置
 
@@ -39,7 +39,7 @@ $  systemctl daemon-reload
 $  systemctl restart docker
 ```
 
-<img src="https://upload-images.jianshu.io/upload_images/18259896-15d5cd4f39a3c862.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200" style="zoom:200%;" />
+<img src="https://raw.githubusercontent.com/zjmJavaByte/images/master/images/18259896-15d5cd4f39a3c862.png" style="zoom:200%;" />
 
 ## 使用Docker镜像
 
@@ -258,7 +258,7 @@ IMAGE          CREATED      CREATED BY                                      SIZE
 
 `https://github.com/tianon/docker-brew-ubuntu-core/blob/c5bc8f61f0e0a8aa3780a8dc3a09ae6558693117/bionic/Dockerfile`
 
-![7ca18ff890a85a80f793b68be07847d](E:\JavaQaaQ\JavaQaaQ\images\7ca18ff890a85a80f793b68be07847d.png)
+![7ca18ff890a85a80f793b68be07847d](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/7ca18ff890a85a80f793b68be07847d.png)
 
 ### 删除和清理镜像
 
@@ -576,15 +576,15 @@ ubuntu       latest         7e0aa2d69a15   4 weeks ago         72.7MB
 
 3. 创建命名空间
 
-   ![ab029a980b7ad9ccec457f77594f932](E:\JavaQaaQ\JavaQaaQ\images\ab029a980b7ad9ccec457f77594f932.png)
+   ![ab029a980b7ad9ccec457f77594f932](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/ab029a980b7ad9ccec457f77594f932.png)
 
 4. 创建容器镜像
 
-   ![6e968d18d3c4eb9192ed02fddfa8a97](E:\JavaQaaQ\JavaQaaQ\images\6e968d18d3c4eb9192ed02fddfa8a97.png)
+   ![6e968d18d3c4eb9192ed02fddfa8a97](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/6e968d18d3c4eb9192ed02fddfa8a97.png)
 
-   ![e4e40038b4335a921b79d3f612d77bb](E:\JavaQaaQ\JavaQaaQ\images\e4e40038b4335a921b79d3f612d77bb.png)
+   ![e4e40038b4335a921b79d3f612d77bb](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/e4e40038b4335a921b79d3f612d77bb.png)
 
-   ![59699a928c63506fe1af9fde02e0c5a](E:\JavaQaaQ\JavaQaaQ\images\59699a928c63506fe1af9fde02e0c5a.png)
+   ![59699a928c63506fe1af9fde02e0c5a](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/59699a928c63506fe1af9fde02e0c5a.png)
 
 5. 操作指南
 
@@ -1222,7 +1222,7 @@ c1bc508cd142   ubuntu              "/bin/bash"              3 hours ago         
 #如下图所示进行访问（注意如果你用的阿里云服务器，需要去安全组打开响应的接口）
 ```
 
-![image-20210523200528457](D:\javaSoft\typora\doc\data\images\image-20210523200528457.png)
+![image-20210523200528457](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/image-20210523200528457.png)
 
 #### 映射所有的接口
 
@@ -4493,7 +4493,7 @@ mysql> show master status;
 
 ```
 
-![21a5dfa8363af047eda78df9db0c4cd](E:\JavaQaaQ\JavaQaaQ\images\21a5dfa8363af047eda78df9db0c4cd.png)
+![21a5dfa8363af047eda78df9db0c4cd](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/21a5dfa8363af047eda78df9db0c4cd.png)
 
 **进入从数据库容器**
 
@@ -4551,7 +4551,7 @@ mysql> show slave status \G;
 .... 省略
 ```
 
-![b4b2e475797be4f3d84c523189de650](E:\JavaQaaQ\JavaQaaQ\images\b4b2e475797be4f3d84c523189de650.png)
+![b4b2e475797be4f3d84c523189de650](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/b4b2e475797be4f3d84c523189de650.png)
 
 **开启主从同步**
 
@@ -4583,7 +4583,7 @@ mysql> show slave status \G;
 ...省略
 ```
 
-![711312b8ad3867cd49be148ddf8e964](E:\JavaQaaQ\JavaQaaQ\images\711312b8ad3867cd49be148ddf8e964.png)
+![711312b8ad3867cd49be148ddf8e964](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/711312b8ad3867cd49be148ddf8e964.png)
 
 **测试**
 
@@ -4678,7 +4678,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 `http://136.14.69.83:9000/minio/login`
 
-![9b6cce18423b8ecc0f20d5fd3c4634e](E:\JavaQaaQ\JavaQaaQ\images\9b6cce18423b8ecc0f20d5fd3c4634e.png)
+![9b6cce18423b8ecc0f20d5fd3c4634e](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/9b6cce18423b8ecc0f20d5fd3c4634e.png)
 
 至于使用，整合springboot等，可以去百度
 
@@ -4757,7 +4757,7 @@ Successfully added user: { "user" : "testuser", "roles" : [ "readWrite" ] }
 
 **使用Navicat for MongoDB连接**
 
-![b643897b8391f97cf577d90c0dedbe8](E:\JavaQaaQ\JavaQaaQ\images\b643897b8391f97cf577d90c0dedbe8.png)
+![b643897b8391f97cf577d90c0dedbe8](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/b643897b8391f97cf577d90c0dedbe8.png)
 
 ## springboot打包docker镜像
 
@@ -4790,11 +4790,11 @@ public class TestController {
 
 **打jar包**
 
-![202455fd47a7943c4b3bc7f2e8bf2a5](E:\JavaQaaQ\JavaQaaQ\images\202455fd47a7943c4b3bc7f2e8bf2a5.png)
+![202455fd47a7943c4b3bc7f2e8bf2a5](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/202455fd47a7943c4b3bc7f2e8bf2a5.png)
 
 **安装docker插件**
 
-![ce2866956898a2d266d1d527c220560](E:\JavaQaaQ\JavaQaaQ\images\ce2866956898a2d266d1d527c220560.png)
+![ce2866956898a2d266d1d527c220560](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/ce2866956898a2d266d1d527c220560.png)
 
 **编写Dockerfile文件，内容如下**
 
@@ -4810,7 +4810,7 @@ EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
-![c10df63c6f19cecfbf10e1b9e4a5129](E:\JavaQaaQ\JavaQaaQ\images\c10df63c6f19cecfbf10e1b9e4a5129.png)
+![c10df63c6f19cecfbf10e1b9e4a5129](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/c10df63c6f19cecfbf10e1b9e4a5129.png)
 
 **上传到指定文件夹下**
 
@@ -4852,15 +4852,17 @@ hello word!
 
 ## 整体架构图
 
-![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.51wendang.com%2Fpic%2F147bc150ad876beb1a56da5c%2F2-485-png_6_0_0_0_0_0_0_892.979_1262.879-893-0-272-893.jpg&refer=http%3A%2F%2Fwww.51wendang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624584566&t=7e4b2a8ea50a6c601c682165a8f6674d)
+![](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/src=http___www.51wendang.com_pic_147bc150ad876beb1a56da5c_2-485-png_6_0_0_0_0_0_0_892.979_1262.879-893-0-272-893.jpg&refer=http___www.51wendang.jpg)
 
 ## docker命令图
 
-![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.jqhtml.com%2Fwp-content%2Fuploads%2F2019%2F5%2FzUfQre.png&refer=http%3A%2F%2Fwww.jqhtml.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1624584604&t=aa19c9d86238f44b6db4b34b0f852a5c)
+![](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/src=http___www.jqhtml.com_wp-content_uploads_2019_5_zUfQre.png&refer=http___www.jqhtml.jpg)
 
 ## 参考书籍
 
-![](E:\JavaQaaQ\JavaQaaQ\images\微信图片_20210530202215.jpg)
+
+
+![](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210530202215.jpg)
 
 ## 参考视频
 
