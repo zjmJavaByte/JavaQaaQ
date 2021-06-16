@@ -16,9 +16,7 @@ Java知识体系的书籍笔记分享
 
 ​		[设计模式之单列模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 
-
-
-​		[为什么要用枚举实现单例模式（避免反射、序列化问题）](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E6%9E%9A%E4%B8%BE%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88%E9%81%BF%E5%85%8D%E5%8F%8D%E5%B0%84%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E9%97%AE%E9%A2%98%EF%BC%89.md)
+​				[为什么要用枚举实现单例模式（避免反射、序列化问题）](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E6%9E%9A%E4%B8%BE%E5%AE%9E%E7%8E%B0%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88%E9%81%BF%E5%85%8D%E5%8F%8D%E5%B0%84%E3%80%81%E5%BA%8F%E5%88%97%E5%8C%96%E9%97%AE%E9%A2%98%EF%BC%89.md)
 
 ### 工具
 
