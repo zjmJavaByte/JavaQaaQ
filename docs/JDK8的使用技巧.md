@@ -7,7 +7,7 @@
 ```java
 /**
  * @Author zjm
- * @Description: **将二维集合转为以为集合**
+ * @Description: 将二维集合转为一维集合
  * @Date: Created in 16:49 2021/6/16
  * @Modified By:
  */
