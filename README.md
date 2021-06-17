@@ -1,6 +1,6 @@
 # JavaQaaQ
 
-Java知识体系的书籍笔记分享
+Java知识体系的书籍笔记分享（逐渐完善中）
 
 ![Image text](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/someday.png)
 
@@ -31,8 +31,17 @@ Java知识体系的书籍笔记分享
 
 ​		[垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 
+### MySQL
+
+​         [MySQL 性能优化神器 Explain 使用分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/MySQL%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8%20Explain%20%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90.md)
+
+### 开发
+
+​        [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/JDK8的使用技巧.md)
+
 ## 书籍列表
 
 1. 《Docker入门与实战》
 2. 《深入理解Java虚拟机》
-
+3. 《Effective java》
+4. 《java并发编程的艺术》
