@@ -12,6 +12,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### 设计模式
 
+​	    [六大设计原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%85%AD%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.md)
+
 ​		[设计模式之策略模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)
 
 ​		[设计模式之单列模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
