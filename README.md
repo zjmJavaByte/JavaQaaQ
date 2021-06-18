@@ -36,7 +36,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[idea必知必会的插件推荐](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md)
 
-​        [typora、picgo 、gitee的san p组合解决图片加载问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/typora、picgo 、gitee的san p组合解决图片加载问题.md)
+​        [typora、picgo 、gitee的san p组合解决图片加载问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/typora%E3%80%81picgo%20%E3%80%81gitee%E7%9A%84san%20p%E7%BB%84%E5%90%88%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98.md)
 
 ### JVM
 
