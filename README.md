@@ -10,6 +10,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[docker入门与实战笔记](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/docker%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98.md)
 
+### 多线程
+
+[`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
+
 ### 设计模式
 
 ​		六大设计原则
