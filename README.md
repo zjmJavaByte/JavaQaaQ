@@ -14,7 +14,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		六大设计原则
 
-- ​	    [单一职责原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%85%AD%E5%A4%A7%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99.md)
+- ​	    [单一职责原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/单一职责原则.md)
 - ​        [开闭原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/开闭原则.md)
 - ​        [里氏替换原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/里氏替换原则.md)
 - ​        [接口隔离原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/接口隔离原则.md)
