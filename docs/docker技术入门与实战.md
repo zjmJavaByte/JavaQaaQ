@@ -1,3 +1,5 @@
+[toc]
+
 # 基础入门
 
 ## 安装配置
@@ -4866,9 +4868,9 @@ hello word!
 
 ## 参考视频
 
-【【狂神说Java】Docker最新超详细版教程通俗易懂-哔哩哔哩】https://b23.tv/a2jm1b
+[【狂神说Java】Docker最新超详细版教程通俗易懂-哔哩哔哩](https://b23.tv/a2jm1b)
 
 ## 参考资料
 
-[]: https://vuepress.mirror.docker-practice.com/	"Docker 从入门到实践"
+[Docker 从入门到实践](https://vuepress.mirror.docker-practice.com/)
 
