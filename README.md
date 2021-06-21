@@ -2,7 +2,7 @@
 
 Java知识体系的书籍笔记分享（逐渐完善中）
 
-![someday](https://gitee.com/laoyouji1018/images/raw/master/img/20210621094110.png)
+![someday](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/someday.png)
 
 # 目录
 
@@ -12,7 +12,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### 多线程
 
-[`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
+​		[`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
 
 ### 设计模式
 
@@ -54,7 +54,17 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​        [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/JDK8的使用技巧.md)
 
-## 书籍列表
+​		[springboot接口参数时间转换、解决Date类型参数异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot接口参数时间转换、解决Date类型参数异常.md)
+
+​		[@Validated @ControllerAdvice高效的参数检验机制](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/@Validated @ControllerAdvice高效的参数检验机制.md)
+
+### 异常
+
+​		[异常经典的几个问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/异常经典的几个问题.md)
+
+​		[处理 Exception 的几种实践](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/处理 Exception 的几种实践.md)
+
+### 书籍列表
 
 1. 《Docker入门与实战》
 2. 《深入理解Java虚拟机》
