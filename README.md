@@ -2,7 +2,7 @@
 
 Java知识体系的书籍笔记分享（逐渐完善中）
 
-![Image text](https://raw.githubusercontent.com/zjmJavaByte/images/master/images/someday.png)
+![someday](https://gitee.com/laoyouji1018/images/raw/master/img/20210621094110.png)
 
 # 目录
 
@@ -60,3 +60,4 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 2. 《深入理解Java虚拟机》
 3. 《Effective java》
 4. 《java并发编程的艺术》
+
