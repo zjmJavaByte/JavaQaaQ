@@ -324,7 +324,7 @@ public enum StatusCodeEnum {
 
 ```
 
-- 定义全局处理器
+- 定义全局处理器[@ControllerAdvice](https://dalin.blog.csdn.net/article/details/113979539)
 
 ```java
 package com.zjm.photo.Exception;
@@ -354,8 +354,8 @@ public class GlobalExceptionHandler {
      * @param be
      * @return
      */
-    @ResponseBody
-    @ExceptionHandler(value = BindException.class)
+    @ResponseBody//返回json数据
+    @ExceptionHandler(value = BindException.class)//异常处理器
     public ResponseResult bindException(BindException be) {
         log.error("捕捉BindException异常：", be);
         List<ObjectError> allErrors = be.getAllErrors();
