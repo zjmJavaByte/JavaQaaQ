@@ -62,6 +62,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[@Validated @ControllerAdvice高效的参数检验机制](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/@Validated、@ControllerAdvice高效的参数检验机制.md)
 
+### Object类
+
+​		[clone方法的研究]()
+
 ### 异常
 
 ​		[异常经典的几个问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/异常经典的几个问题.md)
