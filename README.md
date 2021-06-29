@@ -35,9 +35,9 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 	[设计模式之抽象工厂模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)
 
-	建造者模式
+	[建造者模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
 
-	原型模式
+	[原型模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
 
 
 ### 工具
