@@ -30,7 +30,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[迪米特法则原则](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/迪米特法则原则.md)
 
-##### 二十三中设计模式
+##### 二十三种设计模式
 
 ​		[设计模式之策略模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)
 
@@ -42,9 +42,9 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​        [设计模式之抽象工厂模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)
 
-​        [建造者模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+​        [设计模式之建造者模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
 
-​        [原型模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
+​        [设计模式之原型模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
 
 
 ### 工具
