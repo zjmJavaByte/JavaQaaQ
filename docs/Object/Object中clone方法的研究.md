@@ -57,13 +57,8 @@ package com.zjm.photo.test;
 
 public class Person{
 
-    private Integer age;
-
-    private String name;
-
-
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
@@ -83,4 +78,79 @@ public class CloneTest {
 
 ![image-20210627235901056](https://gitee.com/laoyouji1018/images/raw/master/img/20210627235901.png)
 
+如果Person实现了Cloneable接口
+
+```java
+//实现Cloneable接口
+public class Person implements Cloneable{
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+
+//测试类
+@Slf4j
+public class Test {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Person person = new Person();
+        Person clone = (Person)person.clone();
+    }
+}
+```
+
 结论：如clone方法注释所说，不实现Cloneable接口，当使用clone方法时会报CloneNotSupportedException
+
+**Second：我们看一下段落一**
+
+> 翻译：
+>
+> 创建并返回此对象的副本。 “复制”的确切含义可能取决于对象的类别。一般意图是，对于任何对象 x，表达式：
+> x.clone() != x将是真的，
+> 并且表达式：x.clone().getClass() == x.getClass()会是真的，但这些都不是绝对的要求。
+> 虽然通常的情况是： x.clone().equals(x)会是真的，这不是绝对的要求。
+> 按照惯例，返回的对象应该通过调用 super.clone 来获取。如果一个类和它的所有超类（Object 除外）都遵守这个约定，那么 x.clone().getClass() == x.getClass() 就是这种情况。
+
+我们重写equals和hashCode方法，并且做一些判断
+
+```java
+//实现Cloneable接口
+public class Person implements Cloneable{
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+}
+
+//测试类
+@Slf4j
+public class Test {
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Person person = new Person();
+        Person clone = (Person)person.clone();
+        log.info("两者是否是同一个对象：{}",person == clone);
+        log.info("person对象地址：{}",person );
+        log.info("clone对象地址：{}",clone);
+        log.info("两者的class是否相等：{}",clone.getClass() == person.getClass());
+        log.info("两个对象是否相等：{}",clone.equals(person));//此处一定要重写equals方法
+    }
+}
+```
+
+测试结果：
+
+![](https://gitee.com/laoyouji1018/images/raw/master/img/20210628130252.png)
+
+结论：有测试结果可以发现，正好验证了段落一
