@@ -75,7 +75,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### Object类
 
-​		[clone方法的研究]()
+​		[clone方法的研究](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/Object/Object%E4%B8%ADclone%E6%96%B9%E6%B3%95%E7%9A%84%E7%A0%94%E7%A9%B6.md)
 
 ### 异常
 
