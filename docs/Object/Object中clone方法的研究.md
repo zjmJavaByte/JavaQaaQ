@@ -1,10 +1,8 @@
-
-
 **Object中clone方法的研究**
 
 #### 定义
 
-​		根据Object中方法文档注释可以分为以下几个段落
+​		以下是Object中clone方法文档注释
 
 ```java
 段落一
@@ -43,42 +41,47 @@ protected native Object clone() throws CloneNotSupportedException;
 
 #### 解释说明
 
-**First：我们先从段落三和段落七开始说起**
+##### First：我们先从段落三和段落七开始说起
+
+###### 翻译
 
 > 段落三翻译：类 Object 的方法 clone 执行特定的克隆操作。首先，如果这个对象的类没有实现接口Cloneable，则抛出CloneNotSupportedException。
 >
 > 段落七翻译：CloneNotSupportedException – 如果对象的类不支持 Cloneable 接口。覆盖 clone 方法的子类也可以抛出此异常以指示无法克隆实例。
 
-举例说明：
+###### 举例说明：
+
+- 定义实体类
 
 ```java
 //先创建一个未实现Cloneable类person，并且重写Object的clone方法
 package com.zjm.photo.test;
-
 public class Person{
-
     @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
 }
-//测试
 
+```
+
+- 测试
+
+```java
 public class CloneTest {
-
-    public static void main(String[] args) throws CloneNotSupportedException {
-        
+    public static void main(String[] args) throws CloneNotSupportedException {        
         Person person = new Person();
         Person clone = (Person)person.clone();
     }
 }
 ```
 
-出现以下异常：
+- 出现以下异常：
 
 ![image-20210627235901056](https://gitee.com/laoyouji1018/images/raw/master/img/20210627235901.png)
 
-如果Person实现了Cloneable接口
+- 如果Person实现了Cloneable接口
+
 
 ```java
 //实现Cloneable接口
@@ -89,6 +92,12 @@ public class Person implements Cloneable{
     }
 }
 
+
+```
+
+- 测试
+
+```java
 //测试类
 @Slf4j
 public class Test {
@@ -101,17 +110,19 @@ public class Test {
 
 结论：如clone方法注释所说，不实现Cloneable接口，当使用clone方法时会报CloneNotSupportedException
 
-**Second：我们看一下段落一**
+##### Second：我们看一下段落一
 
-> 翻译：
->
+###### 翻译
+
 > 创建并返回此对象的副本。 “复制”的确切含义可能取决于对象的类别。一般意图是，对于任何对象 x，表达式：
-> x.clone() != x将是真的，
+>x.clone() != x将是真的，
 > 并且表达式：x.clone().getClass() == x.getClass()会是真的，但这些都不是绝对的要求。
 > 虽然通常的情况是： x.clone().equals(x)会是真的，这不是绝对的要求。
 > 按照惯例，返回的对象应该通过调用 super.clone 来获取。如果一个类和它的所有超类（Object 除外）都遵守这个约定，那么 x.clone().getClass() == x.getClass() 就是这种情况。
 
-我们重写equals和hashCode方法，并且做一些判断
+###### 举例说明
+
+- 定义实体类，重写equals和hashCode方法，并且做一些判断
 
 ```java
 //实现Cloneable接口
@@ -134,6 +145,12 @@ public class Person implements Cloneable{
     }
 }
 
+```
+
+- 测试
+
+```java
+
 //测试类
 @Slf4j
 public class Test {
@@ -149,8 +166,197 @@ public class Test {
 }
 ```
 
-测试结果：
+- 测试结果
 
 ![](https://gitee.com/laoyouji1018/images/raw/master/img/20210628130252.png)
 
-结论：有测试结果可以发现，正好验证了段落一
+- 结论：由测试结果可以发现，正好验证了段落一中的结论
+
+##### Third：分析段落二
+
+###### 翻译
+
+> 按照惯例，这个方法返回的对象应该独立于这个对象（它被克隆）。为了实现这种独立性，可能需要在返回之前修改 super.clone 返回的对象的一个或多个字段。通常，这意味着复制包含被克隆对象的内部“深层结构”的任何可变对象，并将对这些对象的引用替换为对副本的引用。如果一个类只包含原始字段或对不可变对象的引用，那么通常情况下，super.clone 返回的对象中没有字段需要修改。
+
+其实上面所说的就是[深拷贝与浅拷贝]()的区别
+
+###### 举例说明
+
+- 浅拷贝
+
+```java
+@Data
+public class House {
+    private String address;
+}
+
+@Data
+public class Person implements Cloneable{
+    
+    private int age;
+    
+    private String name;
+    
+    private House house;
+    
+    public Person(House house) {this.house = house;}
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone(); //此处的拷贝，并没有对house这个引用类型的属性进行拷贝
+    }
+}
+
+//测试类
+@Slf4j
+public class Test1 { //浅拷贝
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Person person = new Person(new House());
+        Person clone = (Person)person.clone();
+        log.info("两者是否是同一个对象：{}",person == clone);
+        log.info("person对象地址：{}",person );
+        log.info("clone对象地址：{}",clone);
+        log.info("House对象地址：{}",clone.getHouse() == person.getHouse());
+    }
+}
+//测试结果
+```
+
+- 测试结果
+
+![image-20210701155632466](https://gitee.com/laoyouji1018/images/raw/master/img/20210701160042.png)
+
+- 深拷贝
+
+```java
+@Data
+public class House  implements Cloneable{
+    private String address;
+    
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
+
+@Data
+public class Person implements Cloneable{
+    
+    private int age;
+    
+    private String name;
+    
+    private House house;
+    
+    public Person(House house) {this.house = house;}
+    
+    @Override
+    public Person clone() throws CloneNotSupportedException {
+        Person person = (Person)super.clone();
+        person.house = (House)house.clone();//对引用类型house也进行拷贝
+        return person;
+    }
+}
+
+//测试类
+@Slf4j
+public class Test1 {//深拷贝
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Person person = new Person();
+        Person clone = person.clone();
+        log.info("两者是否是同一个对象：{}",person == clone);
+        log.info("person对象地址：{}",person );
+        log.info("clone对象地址：{}",clone);
+        log.info("House对象地址：{}",clone.getHouse() == person.getHouse());
+    }
+}
+```
+
+- 测试结果
+
+![image-20210701165718073](https://gitee.com/laoyouji1018/images/raw/master/img/20210701165719.png)
+
+- 结论：如果类中都是基本类型，则直接重写Object的方法即可，但是如果类中包含引用类型，重写类的clone方法时，也要对引用类型的对象进行克隆。
+
+##### Fourth：段落四
+
+###### 翻译
+
+>请注意，所有数组都被认为实现了接口 Cloneable，并且数组类型 T[] 的克隆方法的返回类型是 T[]，其中 T 是任何引用或原始类型。否则，此方法会创建此对象的类的新实例，并使用此对象的相应字段的内容来初始化其所有字段，就像通过赋值一样；字段的内容本身不会被克隆。因此，此方法执行此对象的“浅拷贝”，而不是“深拷贝”操作。
+
+###### 举例说明
+
+- 定义类House
+
+```java
+@Data
+public class House implements Cloneable{
+
+    private String address;
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+}
+
+
+
+```
+
+- 定义类Person
+
+```java
+@Slf4j
+@Data
+public class Person implements Cloneable{
+
+    private int age;
+
+    private String name;
+
+    private House house;
+
+    public Person() {}
+
+    public Person(House house) {this.house = house;}
+
+    @Override
+    public Person clone() throws CloneNotSupportedException {
+        Person person = (Person)super.clone();
+        person.house = (House)house.clone();//对引用类型house也进行拷贝
+        return person;
+    }
+
+   
+```
+
+- 测试
+
+```java
+ public static void main(String[] args) throws CloneNotSupportedException {
+        Person person = new Person();
+        person.setName("zjm");//对原person名称赋值
+        House house = new House();
+        house.setAddress("地址");//对原house的地址赋值
+        person.setHouse(house);
+        Person[] persons = new Person[]{person};
+        Person[] clones = persons.clone();//克隆数组
+        clones[0].setName("qaaq");//对克隆后的数组中的person的名称赋值
+        clones[0].getHouse().setAddress("地址1111");//对克隆后的数组中house地址赋值
+        log.info("两者是否是同一个对象：{}",persons == clones);
+        log.info("原person的名称：{}",persons[0].getName());
+        log.info("克隆后person的名称：{}",clones[0].getName());
+        log.info("原house的地址：{}",persons[0].getHouse().getAddress());
+        log.info("克隆后的house地址：{}",clones[0].getHouse().getAddress());
+        log.info("两者house是否是同一个对象：{}",persons[0].getHouse() == clones[0].getHouse());
+    }
+}
+```
+
+- 测试结果
+
+![image-20210701173416686](https://gitee.com/laoyouji1018/images/raw/master/img/20210701173418.png)
+
+- 结论：根据测试结果可以发现，修改clone对象的值，原对象的值也会跟着改变，验证了这一句话`the contents of the fields are not themselves cloned`,字段的内容本身不会被克隆，但是会发现`log.info("两者是否是同一个对象：{}",persons == clones);`返回的是false，所以数组本身是进行了拷贝，只是其中的值不会进行拷贝，不管是基本类型还是引用类型
