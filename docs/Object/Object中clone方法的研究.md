@@ -226,7 +226,7 @@ public class Test1 { //浅拷贝
 
 ![image-20210701155632466](https://gitee.com/laoyouji1018/images/raw/master/img/20210701160042.png)
 
-- 深拷贝
+- 深拷贝一（clone方法实现）
 
 ```java
 @Data
@@ -275,6 +275,122 @@ public class Test1 {//深拷贝
 - 测试结果
 
 ![image-20210701165718073](https://gitee.com/laoyouji1018/images/raw/master/img/20210701165719.png)
+
+- 深拷贝二（反序列化方式实现）
+
+Person实体类
+
+```java
+@Slf4j
+@Data
+public class Person implements  Serializable {
+
+    private int age;
+
+    private String name;
+
+    private House house;
+
+    public Person() {}
+
+    public Person(House house) {this.house = house;}
+    
+    
+}
+```
+
+House实体类，需要实现Serializable
+
+```java
+@Slf4j
+@Data
+public class House implements Serializable{
+
+    private String address;
+
+    /*@Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }*/
+
+
+    public static void main(String[] args) {
+        Person person = new Person(new House());
+        Person clone = deepCloneObject(person);
+        log.info("两者是否是同一个对象：{}",person == clone);
+        log.info("House对象是否一样：{}",clone.getHouse() == person.getHouse());
+    }
+}
+```
+
+反序列化方法
+
+```java
+
+    /**
+     * 对象的深度克隆，此处的对象涉及Collection接口和Map接口下对象的深度克隆
+     * 利用序列化和反序列化的方式进行深度克隆对象
+     *
+     * @param <T> 待克隆对象的数据类型
+     * @param object 待克隆的对象
+     * @return 已经深度克隆过的对象
+     */
+    public static <T extends Serializable> T deepCloneObject(T object) {
+        T deepClone = null;
+        ByteArrayOutputStream baos = null;
+        ObjectOutputStream oos = null;
+        ByteArrayInputStream bais = null;
+        ObjectInputStream ois = null;
+        try {
+            baos = new ByteArrayOutputStream();
+            oos = new ObjectOutputStream(baos);
+            oos.writeObject(object);
+            bais = new ByteArrayInputStream(baos
+                    .toByteArray());
+            ois = new ObjectInputStream(bais);
+            deepClone = (T)ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(baos != null) {
+                    baos.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                if(oos != null) {
+                    oos.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try{
+                if(bais != null) {
+                    bais.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try{
+                if(ois != null) {
+                    ois.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return deepClone;
+    }
+```
+
+- 测试结果
+
+![image-20210712124557626](https://gitee.com/laoyouji1018/images/raw/master/img/20210712124803.png)
 
 - 结论：如果类中都是基本类型，则直接重写Object的方法即可，但是如果类中包含引用类型，重写类的clone方法时，也要对引用类型的对象进行克隆。
 
