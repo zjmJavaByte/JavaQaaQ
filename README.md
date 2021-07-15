@@ -54,6 +54,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[设计模式之适配器模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)
 
+​		设计模式之外观模式
+
 
 ### 工具
 
