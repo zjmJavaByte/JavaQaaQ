@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd2faeb-f2a7-441e-888e-a85bdcbb2ecb" name="Default Changelist" comment="修改目录">
-      <change afterPath="$PROJECT_DIR$/docs/design-mode/桥接模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design-mode/组合模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design-mode/组合模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design-mode/适配器模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design-mode/适配器模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <workItem from="1625149367140" duration="550000" />
       <workItem from="1625492185579" duration="31000" />
       <workItem from="1625492230573" duration="513000" />
-      <workItem from="1626272484248" duration="1311000" />
+      <workItem from="1626272484248" duration="1596000" />
     </task>
     <task id="LOCAL-00001" summary="修改单列模式">
       <created>1623769473863</created>
@@ -232,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626272653087</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="修改目录">
+      <created>1626277055897</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1626277055897</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
