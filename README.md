@@ -46,6 +46,14 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​        [设计模式之原型模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.md)
 
+​		[设计模式之桥接模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F.md)
+
+​		[设计模式之组合模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F.md)
+
+​		[设计模式之装饰者模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+
+​		[设计模式之适配器模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)
+
 
 ### 工具
 
