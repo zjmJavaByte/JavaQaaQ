@@ -56,6 +56,20 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ​		[设计模式之外观模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E5%A4%96%E8%A7%82%E6%A8%A1%E5%BC%8F.md)
 
+​		[设计模式之享元模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F.md)
+
+​		[设计模式之代理模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md)
+
+- [静态代理和动态代理](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E5%92%8C%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86.md)
+
+​		[设计模式之装饰者模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+
+- [装饰模式与代理模式的区别](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F%E4%B8%8E%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+
+​		 [设计模式之责任链模式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/design-mode/%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F.md)
+
+​		
+
 
 ### 工具
 
