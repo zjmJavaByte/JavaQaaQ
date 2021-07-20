@@ -54,8 +54,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### 异常
 
 - [异常经典的几个问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/异常经典的几个问题.md)
-
 - [处理 Exception 的几种实践](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/处理Exception的几种实践.md)
+
+### 算法 day by day
+
+- 每日一题leetcode 
 
 ### 书籍列表
 
