@@ -58,7 +58,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### 算法 day by day
 
-- 每日一题leetcode 
+- [每日一题leetcode](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/leetcode/readme.md) 
 
 ### 书籍列表
 
@@ -66,5 +66,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 2. 《深入理解Java虚拟机》
 3. 《Effective java》
 4. 《java并发编程的艺术》
+5. 《spring深度源码解析》
+6. 《重学Java设计模式》
 
 ### [联系作者](https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg)
