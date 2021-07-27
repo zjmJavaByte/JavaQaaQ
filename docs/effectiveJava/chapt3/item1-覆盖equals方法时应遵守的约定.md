@@ -179,7 +179,7 @@ public static void main(String[] args) {
 
 从以上结果发现违反了对称性
 
-为了达到对称性，让ColorPoint.equal()方法在实现混合比较时（父子类比较），忽略颜色
+为了达到对称性，让`ColorPoint.equal()`方法在实现混合比较时（父子类比较），忽略颜色
 
 ```java
 //修改ColorPoint中的equal方法
@@ -220,3 +220,4 @@ public static void main(String[] args) {
 虽然经过上面后保证了对称性，但是却违反了传递性
 
 - 一致性：对于任何非空的引用值 x 和 y, `x.equals(y)` 的多次调用必须一致地返回 true 或一致地返回 false，前提是不修改 equals 中使用的信息。
+

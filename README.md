@@ -67,3 +67,6 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 3. 《Effective java》
 4. 《java并发编程的艺术》
 
+### 联系作者
+
+<img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg" style="zoom:25%;" />
