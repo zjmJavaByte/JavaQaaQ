@@ -87,7 +87,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### [联系作者](https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg)
 
-![6ab45a4d6e577c8dac266577f025d5b](https://gitee.com/laoyouji1018/images/raw/master/img/20210727161313.jpg)
+![a4ce327d335f70ff0ebca49d9c3b322](https://gitee.com/laoyouji1018/images/raw/master/img/20210727162025.jpg)
 
 ### 动一动
 
