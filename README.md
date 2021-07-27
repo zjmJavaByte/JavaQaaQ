@@ -51,8 +51,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 
 - [springboot接口参数时间转换、解决Date类型参数异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot接口参数时间转换、解决Date类型参数异常.md)
-
 - [@Validated @ControllerAdvice高效的参数检验机制](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/@Validated、@ControllerAdvice高效的参数检验机制.md)
+- [分享N个让你代码更好的小建议](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/分享N个让你代码更好的小建议.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144647.png" alt="img" style="zoom:50%;" />Object类
 

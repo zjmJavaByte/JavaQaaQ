@@ -1,5 +1,68 @@
 **分享N个让你代码更好的小建议**
 
+### 基础
+
+#### 枚举的属性字段必须是私有且不可变
+
+枚举通常被当做常量使用，如果枚举中存在公共属性字段或设置字段方法，那么这些枚举常量的属性很容易被修改；理想情况下，枚举中的属性字段是私有的，并在私有构造函数中赋值，没有对应的Setter 方法，最好加上final 修饰符。
+
+**「（反例）：」**
+
+```java
+public enum SwitchStatus {
+    // 枚举的属性字段反例
+    DISABLED(0, "禁用"),
+    ENABLED(1, "启用");
+
+    public int value;
+    private String description;
+
+    private SwitchStatus(int value, String description) {
+        this.value = value;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
+```
+
+**「（正例）：」**
+
+```java
+
+public enum SwitchStatus {
+    // 枚举的属性字段正例
+    DISABLED(0, "禁用"),
+    ENABLED(1, "启用");
+
+    // final 修饰
+    private final int value;
+    private final String description;
+
+    private SwitchStatus(int value, String description) {
+        this.value = value;
+        this.description = description;
+    }
+
+    // 没有Setter 方法
+    public int getValue() {
+        return value;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+}
+```
+
+
+
 ### Mysql
 
 #### 仅仅判断是否存在时，`select count `比` select `具体的列，更好。
@@ -261,6 +324,51 @@ for (Map.Entry<Long, UserDO> userEntry : userMap.entrySet()) {
     UserDO user = userEntry.getValue();
     ...
 }
+```
+
+#### **使用静态代码块实现赋值静态成员变量**
+
+对于集合类型的静态成员变量，应该使用静态代码块赋值，而不是使用集合实现来赋值。
+
+**「反例：」**
+
+```java
+
+//赋值静态成员变量反例
+    private static Map<String, Integer> map = new HashMap<String, Integer>(){
+        {
+            map.put("Leo",1);
+            map.put("Family-loving",2);
+            map.put("Cold on the out side passionate on the inside",3);
+        }
+    };
+    private static List<String> list = new ArrayList<>(){
+        {
+            list.add("Sagittarius");
+            list.add("Charming");
+            list.add("Perfectionist");
+        }
+    };
+```
+
+**「正例：」**
+
+```java
+
+//赋值静态成员变量正例
+private static Map<String, Integer> map = new HashMap<String, Integer>();
+    static {
+        map.put("Leo",1);
+        map.put("Family-loving",2);
+        map.put("Cold on the out side passionate on the inside",3);
+    }
+    
+private static List<String> list = new ArrayList<>();
+    static {
+        list.add("Sagittarius");
+        list.add("Charming");
+        list.add("Perfectionist");
+    }
 ```
 
 
@@ -967,9 +1075,45 @@ if(duringChristmas){
 
 如果到了元宵节的时候，运营小姐姐突然又有想法，红包皮肤换成灯笼相关的，这时候，是不是要去修改代码了，重新发布了？从一开始，实现一张红包皮肤的配置表，将红包皮肤做成配置化呢？更换红包皮肤，只需修改一下表数据就好了。
 
+#### 返回空数组和集合而非 null
 
+若程序运行返回null，需要调用方强制检测null，否则就会抛出空指针异常；返回空数组或空集合，有效地避免了调用方因为未检测null 而抛出空指针异常的情况，还可以删除调用方检测null 的语句使代码更简洁。
 
+**「反例：」**
 
+```java
+
+//返回null 反例
+public static Result[] getResults() {
+    return null;
+}
+
+public static List<Result> getResultList() {
+    return null;
+}
+
+public static Map<String, Result> getResultMap() {
+    return null;
+}
+```
+
+**「正例：」**
+
+```JAVA
+
+//返回空数组和空集正例
+public static Result[] getResults() {
+    return new Result[0];
+}
+
+public static List<Result> getResultList() {
+    return Collections.emptyList();
+}
+
+public static Map<String, Result> getResultMap() {
+    return Collections.emptyMap();
+}
+```
 
 
 
