@@ -6,6 +6,12 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 # 目录
 
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727150147.png" alt="img" style="zoom:50%;" />基础
+
+- [序列化与反序列化的概念](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E6%A6%82%E5%BF%B5.md)
+- [私有构造器相关问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E5%99%A8%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.md)
+- [Java null强制类型转换](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%20null%20%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md)
+
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144417.png" alt="img" style="zoom:50%;" />Docker
 
 - [docker入门与实战笔记](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/docker%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98.md)
@@ -21,10 +27,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144250.png" alt="img" style="zoom:50%;" />工具
 
-- [idea必知必会的插件推荐](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md)
-
 -  [typora、picgo 、gitee的san p组合解决图片加载问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/typora%E3%80%81picgo%20%E3%80%81gitee%E7%9A%84san%20p%E7%BB%84%E5%90%88%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98.md)
 
+### idea
+
+- [idea必知必会的插件推荐](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/idea%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JVM
 
@@ -60,6 +67,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [每日一题leetcode](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/leetcode/readme.md) 
 - [算法总结](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/leetcode/arithmetic.md)
+
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727153229.png" alt="img" style="zoom:50%;" />Redis
+
+- [redis实现接口的幂等性](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/redis/redis实现接口的幂等性.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144332.png" alt="img" style="zoom:50%;" />Spring
 
