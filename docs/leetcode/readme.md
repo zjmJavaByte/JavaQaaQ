@@ -13,6 +13,7 @@
 - [旋转数组](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/leetcode/array/LeetCode-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84.md)
 - [存在重复元素](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/leetcode/array/LeetCode-%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0.md)
 - [只出现一次的数字](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/leetcode/array/LeetCode-只出现一次的数字.md)
+- [两个数组的交集 II](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/leetcode/array/LeetCode-两个数组的交集 II.md)
 
 ### 中级
 
