@@ -13,4 +13,5 @@
 #### 对象的通用方法
 
 - [覆盖 equals 方法时应遵守的约定](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/effectiveJava/chapt3/item1-%E8%A6%86%E7%9B%96equals%E6%96%B9%E6%B3%95%E6%97%B6%E5%BA%94%E9%81%B5%E5%AE%88%E7%9A%84%E7%BA%A6%E5%AE%9A.md)
+- [**当覆盖 equals 时，始终覆盖 hashCode**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/effectiveJava/chapt3/item2-%E5%BD%93%E8%A6%86%E7%9B%96%20equals%20%E6%97%B6%EF%BC%8C%E5%A7%8B%E7%BB%88%E8%A6%86%E7%9B%96%20hashCode.md)
 
