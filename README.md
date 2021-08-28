@@ -77,7 +77,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [Spring为什么建议使用构造器来注入](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/spring/Spring为什么建议使用构造器来注入.md)
 
-<img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />**Git**
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />Git
 
 - [git  Invalid username or password](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/git/git%E4%BF%AE%E6%94%B9%E8%AE%BE%E7%BD%AE.md)
 
