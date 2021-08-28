@@ -47,11 +47,11 @@
 
 - 编辑
 
-![image-20210828142219440](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210828142219440.png)
+![image-20210828142219440](https://gitee.com/laoyouji1018/images/raw/master/img/20210828151608.png)
 
 - 将刚刚生成的凭据用于密码设置
 
 ![image-20210828142316634](https://gitee.com/laoyouji1018/images/raw/master/img/20210828142318.png)
 
-#### 验证
+
 
