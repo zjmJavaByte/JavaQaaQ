@@ -2,7 +2,7 @@
 
 ## 前言
 
-> Cloneable 接口的目的是作为对象的一个 mixin 接口，表面这样的对象允许被克隆
+> Cloneable 接口的目的是作为对象的一个 mixin 接口，表明这样的对象允许被克隆
 >
 > **译注：mixin 是掺合，混合，糅合的意思，即可以将任意一个对象的全部或部分属性拷贝到另一个对象上。**
 
@@ -127,4 +127,151 @@ public class Stack implements Cloneable {
 #### 注意事项
 
 > 如果`elements`域是final的，上述方案就不能正常工作，因为clone方法是被禁止给final域赋新值的，只是个根本问题：就像序列化一样，**Cloneable架构与引用可变对象的final域正常用法是不相兼容的**，除非在原始对象和克隆对象之间可以安全的共享此可变对象。为了使类称为可克隆的，可能有必要称为去掉某些域中的final修饰符。
+
+#### 特例
+
+> **仅仅递归地调用clone并不总是足够的。**例如，假设你正在为 hash 表编写一个克隆方法， hash 表的内部由一组 bucket 组成，每个 bucket 键-值对的引用都指向原先的链表。
+
+```java
+public class HashTable implements Cloneable {
+    private Entry[] buckets = ...;
+
+    private static class Entry {
+        final Object key;
+        Object value;
+        Entry next;
+
+        Entry(Object key, Object value, Entry next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+    } ... // Remainder omitted
+}
+```
+
+假设你只是递归地克隆 bucket 数组，就像我们对 Stack 所做的那样：
+
+```java
+// Broken clone method - results in shared mutable state!
+@Override
+public HashTable clone() {
+    try {
+        HashTable result = (HashTable) super.clone();
+        result.buckets = buckets.clone();
+        return result;
+    } catch (CloneNotSupportedException e) {
+        throw new AssertionError();
+    }
+}
+```
+
+尽管克隆具有自己的 bucket 数组，但该数组引用的链接列表与原始链表相同，这很容易导致克隆和原始的不确定性行为。要解决这个问题，你必须复制包含每个 bucket 的链表。这里有一个常见的方法：
+
+```java
+// Recursive clone method for class with complex mutable state
+public class HashTable implements Cloneable {
+
+private Entry[] buckets = ...;
+
+    private static class Entry {
+        final Object key;
+        Object value;
+        Entry next;
+
+        Entry(Object key, Object value, Entry next) {
+            this.key = key;
+            this.value = value;
+            this.next = next;
+        }
+
+        // Recursively copy the linked list headed by this Entry
+        Entry deepCopy() {
+            return new Entry(key, value,next == null ? null : next.deepCopy());
+        }
+    }
+
+    @Override
+    public HashTable clone() {
+        try {
+            HashTable result = (HashTable) super.clone();
+            result.buckets = new Entry[buckets.length];
+
+            for (int i = 0; i < buckets.length; i++)
+                if (buckets[i] != null)
+                    result.buckets[i] = buckets[i].deepCopy();
+
+            return result;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    } ... // Remainder omitted
+}
+
+```
+
+虽然这种技术很可爱，而且如果 bucket 不太长也可以很好地工作，但是克隆链表并不是一个好方法，因为它为链表中的每个元素消耗一个堆栈帧。如果列表很长，很容易导致堆栈溢出。为了防止这种情况的发生，你可以用迭代替换 deepCopy 中的递归：
+
+```java
+// Iteratively copy the linked list headed by this Entry
+Entry deepCopy() {
+    Entry result = new Entry(key, value, next);
+    for (Entry p = result; p.next != null; p = p.next)
+        p.next = new Entry(p.next.key, p.next.value, p.next.next);
+    return result;
+}
+```
+
+#### hashMap中的clone
+
+> 克隆复杂可变对象的最后一种方法是调用 super.clone，将结果对象中的所有字段设置为初始状态，然后调用更高级别的方法重新生成原始对象的状态。
+
+```java
+public Object clone() {
+        HashMap result;
+        try {
+            //调用 super.clo
+            result = (HashMap)super.clone();
+        } catch (CloneNotSupportedException var3) {
+            throw new InternalError(var3);
+        }
+        //设置为初始状态
+        result.reinitialize();
+    	//调用更高级别的方法重新生成原始对象的状态
+        result.putMapEntries(this, false);
+        return result;
+    }
+```
+
+调用更高级别的方法重新生成原始对象的状态
+
+```java
+final void putMapEntries(Map<? extends K, ? extends V> m, boolean evict) {
+        int s = m.size();
+        if (s > 0) {
+            if (this.table == null) {
+                float ft = (float)s / this.loadFactor + 1.0F;
+                int t = ft < 1.07374182E9F ? (int)ft : 1073741824;
+                if (t > this.threshold) {
+                    this.threshold = tableSizeFor(t);
+                }
+            } else if (s > this.threshold) {
+                this.resize();
+            }
+
+            Iterator var8 = m.entrySet().iterator();
+
+            while(var8.hasNext()) {
+                Entry<? extends K, ? extends V> e = (Entry)var8.next();
+                K key = e.getKey();
+                V value = e.getValue();
+                this.putVal(hash(key), key, value, false, evict);
+            }
+        }
+    }
+```
+
+##### 注意事项
+
+> **与构造函数一样，clone方法决不能在构建的过程中，调用可覆盖方法。**如果 clone 调用一个在子类中被重写的方法，这个方法将在克隆中的状态之前执行，很可能导致克隆对象和原始对象的之间不一致问题。因此，前一段中讨论的 put(key, value)方法应该是 final 或 private 方法。
 

@@ -19,6 +19,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144224.png" alt="img" style="zoom: 50%;" />多线程
 
 - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
+- volatile 关键字详解
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144240.png" alt="img" style="zoom:50%;" />设计模式
 
@@ -75,6 +76,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144332.png" alt="img" style="zoom:50%;" />Spring
 
 - [Spring为什么建议使用构造器来注入](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/spring/Spring为什么建议使用构造器来注入.md)
+
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />Git
+
+- [git  Invalid username or password](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/git/git%E4%BF%AE%E6%94%B9%E8%AE%BE%E7%BD%AE.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144441.png" alt="img" style="zoom:50%;" />书籍列表
 
