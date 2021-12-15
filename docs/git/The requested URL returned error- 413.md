@@ -2,7 +2,7 @@
 
 git error: RPC failed; HTTP 413 curl 22 The requested URL returned error: 413
 
-![image-20211114115301173](/Users/zhujianmin/Library/Application Support/typora-user-images/image-20211114115301173.png)
+![image-20211114115301173](https://gitee.com/laoyouji1018/images/raw/master/img/202112041751140.png)
 
 
 
@@ -54,7 +54,7 @@ ssh-keygen -t rsa -C "account email"
 
 `account email`为上面的邮箱地址  提示输入保存密钥路径，直接回车即可（三次默认回车）
 
-![image-20211114120050900](/Users/zhujianmin/Library/Application Support/typora-user-images/image-20211114120050900.png)
+![image-20211114120050900](https://gitee.com/laoyouji1018/images/raw/master/img/202112041751882.png)
 
 。成功是显示如下
 
@@ -92,7 +92,7 @@ cat id_rsa.pub
 
 - 1. 填写和粘贴公钥内容（不含中文）。
 
-     ![img](https:////upload-images.jianshu.io/upload_images/3239766-9f207e38726ee5a2.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
+     ![image-20211204175309486](https://gitee.com/laoyouji1018/images/raw/master/img/202112041753519.png)
 
 ### 三、设置remote url
 
