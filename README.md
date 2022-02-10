@@ -45,6 +45,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
 - [MySQL 性能优化神器 Explain 使用分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/MySQL%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8%20Explain%20%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90.md)
+- [Mysql 高级特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/mysql/mysql%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144545.png" alt="img" style="zoom:50%;" />开发
 
