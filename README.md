@@ -82,7 +82,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [git  Invalid username or password](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/git/git%E4%BF%AE%E6%94%B9%E8%AE%BE%E7%BD%AE.md)
 
-### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144441.png" alt="img" style="zoom:50%;" />书籍列表
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144441.png" alt="img" style="zoom:50%;" />书籍列表(有需要书的朋友可扫描下方二维码)
 
 1. 《Docker入门与实战》
 2. 《深入理解Java虚拟机》
@@ -90,6 +90,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 4. 《java并发编程的艺术》
 5. 《spring深度源码解析》
 6. 《重学Java设计模式》
+6. [《mysql技术内幕 InnoDB存储引擎》](https://www.processon.com/view/link/62183932f346fb06ec04ebf7#map) 
 
 ### [联系作者](https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg)
 
