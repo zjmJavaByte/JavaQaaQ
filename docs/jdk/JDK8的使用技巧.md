@@ -28,3 +28,31 @@ public class FlatMap {
 ```
 
  
+
+###### 使用递归生成父子结构
+
+```java
+ public Object treeList() {
+        List<Corp> all = repository.findAll();
+        List<Corp> result = all.stream()
+                //corp.getLevel().equals(1) 意思是level为1的是顶级父级
+                .filter(corp -> corp.getLevel().equals(1))
+                .map(permission -> covert(permission, all)).collect(Collectors.toList());
+        return result;
+    }
+
+    /**
+     * 将权限转换为带有子级的权限对象
+     * 当找不到子级权限的时候map操作不会再递归调用covert
+     */
+    private Corp covert(Corp corp, List<Corp> corpList) {
+        Corp node = new Corp();
+        BeanUtils.copyProperties(corp, node);
+        List<Corp> children = corpList.stream()
+                .filter(subCorp -> subCorp.getParentCode().equals(corp.getCode()))
+                .map(subCorp -> covert(subCorp, corpList)).collect(Collectors.toList());
+        node.setChildren(children);
+        return node;
+    }
+```
+

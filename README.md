@@ -2,7 +2,7 @@
 
 Java知识体系的书籍笔记分享（逐渐完善中）
 
-![面试](https://gitee.com/laoyouji1018/images/raw/master/img/202202101630661.jpg)
+![day](https://gitee.com/laoyouji1018/images/raw/master/img/202202101630661.jpg)
 
 # 目录
 
@@ -11,10 +11,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [序列化与反序列化的概念](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E7%9A%84%E6%A6%82%E5%BF%B5.md)
 - [私有构造器相关问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E5%99%A8%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.md)
 - [Java null强制类型转换](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%20null%20%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md)
+- [Java接口成员变量和方法默认修饰符](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%E6%8E%A5%E5%8F%A3%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%96%B9%E6%B3%95%E9%BB%98%E8%AE%A4%E4%BF%AE%E9%A5%B0%E7%AC%A6.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144417.png" alt="img" style="zoom:50%;" />Docker
 
-- [docker入门与实战笔记](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/docker%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98.md)
+- [docker入门与实战笔记](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/docker/docker%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144224.png" alt="img" style="zoom: 50%;" />多线程
 
@@ -33,14 +34,15 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210728160220.png" alt="img" style="zoom:25%;" />idea
 
 - [idea必知必会的插件推荐](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/idea%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md)
+- [debug调试](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/debug%E8%B0%83%E8%AF%95.md)
+- [idea使用maven插件构建springboot项目镜像（基于阿里云服务器）](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/idea%E4%BD%BF%E7%94%A8maven%E6%8F%92%E4%BB%B6%E6%9E%84%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE%E9%95%9C%E5%83%8F%EF%BC%88%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89.md)
 
-### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JVM
+### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JDK
 
 - [jdk特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk%E7%89%B9%E6%80%A7.md)
-
 - [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
-
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
+- [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
@@ -81,6 +83,36 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />Git
 
 - [git  Invalid username or password](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/git/git%E4%BF%AE%E6%94%B9%E8%AE%BE%E7%BD%AE.md)
+- [The requested URL returned error- 413](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/git/The%20requested%20URL%20returned%20error-%20413.md)
+
+### Linux
+
+- [使用crontab定时删除文件](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/Linux/%E4%BD%BF%E7%94%A8crontab%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6.md)
+
+### Spring
+
+- [spring-aop执行顺序](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/spring-aop%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.md)
+
+### efficient
+
+- [1G的内存如何去重10亿手机号码](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/efficient/1G%E7%9A%84%E5%86%85%E5%AD%98%E5%A6%82%E4%BD%95%E5%8E%BB%E9%87%8D10%E4%BA%BF%E6%89%8B%E6%9C%BA%E5%8F%B7%E7%A0%81.md)
+- [`@Validated @ControllerAdvice` 高效的参数检验机制](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/efficient/%40Validated%E3%80%81%40ControllerAdvice%E9%AB%98%E6%95%88%E7%9A%84%E5%8F%82%E6%95%B0%E6%A3%80%E9%AA%8C%E6%9C%BA%E5%88%B6.md)
+- [for循环优化方式](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/efficient/for%E5%BE%AA%E7%8E%AF%E4%BC%98%E5%8C%96%E6%96%B9%E5%BC%8F.md)
+- [分享N个让你代码更好的小建议](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/efficient/%E5%88%86%E4%BA%ABN%E4%B8%AA%E8%AE%A9%E4%BD%A0%E4%BB%A3%E7%A0%81%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%B0%8F%E5%BB%BA%E8%AE%AE.md)
+- [接口的幂等性怎么设计](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/efficient/%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7%E7%90%86%E8%AE%BA%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F.md)
+
+### Exception
+
+- [处理 Exception 的几种实践](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/exception/%E5%A4%84%E7%90%86Exception%E7%9A%84%E5%87%A0%E7%A7%8D%E5%AE%9E%E8%B7%B5.md)
+- [异常经典的几个问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/exception/%E5%BC%82%E5%B8%B8%E7%BB%8F%E5%85%B8%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98.md)
+
+### Maven
+
+- [maven教程](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/maven/maven%E6%95%99%E7%A8%8B.md)
+
+### Go
+
+- [go项目部署](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/go/go%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144441.png" alt="img" style="zoom:50%;" />书籍列表(有需要书的朋友可扫描下方二维码)
 
