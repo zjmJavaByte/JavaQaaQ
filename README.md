@@ -20,7 +20,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144224.png" alt="img" style="zoom: 50%;" />多线程
 
 - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
-- volatile 关键字详解
+- [volatile 关键字详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/volatile%20%E5%85%B3%E9%94%AE%E5%AD%97%E8%AF%A6%E8%A7%A3.md)
+- [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144240.png" alt="img" style="zoom:50%;" />设计模式
 
@@ -30,6 +31,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144250.png" alt="img" style="zoom:50%;" />工具
 
 -  [typora、picgo 、gitee的san p组合解决图片加载问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/typora%E3%80%81picgo%20%E3%80%81gitee%E7%9A%84san%20p%E7%BB%84%E5%90%88%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98.md)
+-  [picgo使用gitee做图床 出现 stateCode 403 Forbidden](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%B7%A5%E5%85%B7/picgo%E4%BD%BF%E7%94%A8gitee%E5%81%9A%E5%9B%BE%E5%BA%8A%20%E5%87%BA%E7%8E%B0%20stateCode%20403%20Forbidden.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210728160220.png" alt="img" style="zoom:25%;" />idea
 
@@ -39,24 +41,22 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JDK
 
-- [jdk特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk%E7%89%B9%E6%80%A7.md)
-- [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
-- [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
+- [jdk特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/jdk%E7%89%B9%E6%80%A7.md)
+- [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
+- [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
 - [MySQL 性能优化神器 Explain 使用分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/MySQL%20%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%A5%9E%E5%99%A8%20Explain%20%E4%BD%BF%E7%94%A8%E5%88%86%E6%9E%90.md)
 - [Mysql 高级特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/mysql/mysql%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7.md)
+- [mysql数据库状态](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/mysql/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%8A%B6%E6%80%81.md)
+- [mysql面试](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/mysql/mysql%E9%9D%A2%E8%AF%95.md)
+- [通过binlog恢复数据](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/mysql/%E9%80%9A%E8%BF%87binlog%E6%81%A2%E5%A4%8D%E6%95%B0%E6%8D%AE.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144545.png" alt="img" style="zoom:50%;" />开发
 
--  [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/JDK8的使用技巧.md)
 
-
-- [springboot接口参数时间转换、解决Date类型参数异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot接口参数时间转换、解决Date类型参数异常.md)
-- [@Validated @ControllerAdvice高效的参数检验机制](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/@Validated、@ControllerAdvice高效的参数检验机制.md)
-- [分享N个让你代码更好的小建议](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/分享N个让你代码更好的小建议.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144647.png" alt="img" style="zoom:50%;" />Object类
 
@@ -75,10 +75,13 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727153229.png" alt="img" style="zoom:50%;" />Redis
 
 - [redis实现接口的幂等性](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/redis/redis实现接口的幂等性.md)
+- [`Redis`的`incr`命令引发的反序列化异常和`ERR value is not an integer or out of range`异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/redis/Redis%E7%9A%84incr%E5%91%BD%E4%BB%A4%E5%BC%95%E5%8F%91%E7%9A%84%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E5%BC%82%E5%B8%B8%E5%92%8CERR%20value%20is%20not%20an%20integer%20or%20out%20of%20range%E5%BC%82%E5%B8%B8.md)
+- [redis的事务](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/redis/redis%E7%9A%84%E4%BA%8B%E5%8A%A1%E4%B8%8Ewatch.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144332.png" alt="img" style="zoom:50%;" />Spring
 
 - [Spring为什么建议使用构造器来注入](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/spring/Spring为什么建议使用构造器来注入.md)
+- [容器基本用法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/spring/%E5%AE%B9%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />Git
 
@@ -92,6 +95,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### Spring
 
 - [spring-aop执行顺序](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/spring-aop%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.md)
+- [org.springframework.data.repository 配合事物@Transactional的一个坑](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E4%BA%8B%E5%8A%A1/org.springframework.data.repository%20%E9%85%8D%E5%90%88%E4%BA%8B%E7%89%A9%40Transactional%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91.md)
 
 ### efficient
 
@@ -110,6 +114,16 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [maven教程](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/maven/maven%E6%95%99%E7%A8%8B.md)
 
+### Springboot
+
+- [springboot接口参数时间转换、解决Date类型参数异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot接口参数时间转换、解决Date类型参数异常.md)
+
+### 网络
+
+- [SSL与TLS的区别以及介绍](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/SSL%E4%B8%8ETLS%E7%9A%84%E5%8C%BA%E5%88%AB%E4%BB%A5%E5%8F%8A%E4%BB%8B%E7%BB%8D.md)
+- [TCP四次挥手为什么是四次？可以三次吗？](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/TCP%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%9B%E6%AC%A1%EF%BC%9F%E5%8F%AF%E4%BB%A5%E4%B8%89%E6%AC%A1%E5%90%97%EF%BC%9F.md)
+- [TCP的三次握手与四次挥手详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%B8%8E%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E8%AF%A6%E8%A7%A3.md)
+
 ### Go
 
 - [go项目部署](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/go/go%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2.md)
@@ -123,6 +137,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 5. 《spring深度源码解析》
 6. 《重学Java设计模式》
 6. [《mysql技术内幕 InnoDB存储引擎》](https://www.processon.com/view/link/62183932f346fb06ec04ebf7#map) 
+6. 《图解http》
+6. 《http2基础教程》
+6. 《高性能mysql》
+6. 《mysql技术内幕 Innodb存储引擎》
+6. 《Redis设计与实现》
 
 ### [联系作者](https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg)
 
