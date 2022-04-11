@@ -42,6 +42,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [idea必知必会的插件推荐](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/idea%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.md)
 - [debug调试](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/debug%E8%B0%83%E8%AF%95.md)
 - [idea使用maven插件构建springboot项目镜像（基于阿里云服务器）](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/idea/idea%E4%BD%BF%E7%94%A8maven%E6%8F%92%E4%BB%B6%E6%9E%84%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE%E9%95%9C%E5%83%8F%EF%BC%88%E5%9F%BA%E4%BA%8E%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89.md)
+- [jclasslib 插件安装及使用](https://blog.csdn.net/m0_47988201/article/details/120220435)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JDK
 
@@ -49,6 +50,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
+- 
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
