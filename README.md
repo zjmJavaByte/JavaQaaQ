@@ -13,6 +13,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [Java null强制类型转换](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%20null%20%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md)
 - [Java接口成员变量和方法默认修饰符](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%E6%8E%A5%E5%8F%A3%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%96%B9%E6%B3%95%E9%BB%98%E8%AE%A4%E4%BF%AE%E9%A5%B0%E7%AC%A6.md)
 
+### 集合框架
+
+- [ArrayList扩容机制中 hugeCapacity 函数与 MAX_ARRAY_SIZE](https://blog.csdn.net/w605283073/article/details/109696771)
+
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144417.png" alt="img" style="zoom:50%;" />Docker
 
 - [docker入门与实战笔记](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/docker/docker%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98.md)
@@ -123,6 +127,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [SSL与TLS的区别以及介绍](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/SSL%E4%B8%8ETLS%E7%9A%84%E5%8C%BA%E5%88%AB%E4%BB%A5%E5%8F%8A%E4%BB%8B%E7%BB%8D.md)
 - [TCP四次挥手为什么是四次？可以三次吗？](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/TCP%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E5%9B%9B%E6%AC%A1%EF%BC%9F%E5%8F%AF%E4%BB%A5%E4%B8%89%E6%AC%A1%E5%90%97%EF%BC%9F.md)
 - [TCP的三次握手与四次挥手详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E7%BD%91%E7%BB%9C/TCP%E7%9A%84%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%B8%8E%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E8%AF%A6%E8%A7%A3.md)
+- [再谈HTTP2性能提升之背后原理—HTTP2历史解剖](https://www.xujun.org/note-1009.html)
 
 ### Go
 
