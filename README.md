@@ -67,7 +67,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
       - 栈上分配
       - 标量替换
 
-- HotSpot虚拟机对象
+- [HotSpot虚拟机对象](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/HotSpot%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1.md)
   - [JDK之JVM中Java对象的头部占多少byte](https://cloud.tencent.com/developer/article/1413543)
 
 
