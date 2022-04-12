@@ -50,7 +50,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
-- 
+- [运行时数据区](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
