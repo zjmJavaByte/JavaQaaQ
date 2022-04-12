@@ -67,6 +67,9 @@ Java知识体系的书籍笔记分享（逐渐完善中）
       - 栈上分配
       - 标量替换
 
+- HotSpot虚拟机对象
+  - [JDK之JVM中Java对象的头部占多少byte](https://cloud.tencent.com/developer/article/1413543)
+
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
