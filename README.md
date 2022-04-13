@@ -51,14 +51,14 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
 - [运行时数据区](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.md)
-  - Java虚拟机---方法区
+  - [方法区、运行时常量池、字符串常量池的关系](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E6%96%B9%E6%B3%95%E5%8C%BA%E3%80%81%E8%BF%90%E8%A1%8C%E6%97%B6%E5%B8%B8%E9%87%8F%E6%B1%A0%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F%E6%B1%A0%E7%9A%84%E5%85%B3%E7%B3%BB.md)
+  - [Java虚拟机---方法区](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/Java%E8%99%9A%E6%8B%9F%E6%9C%BA---%E6%96%B9%E6%B3%95%E5%8C%BA.md)
   - Java虚拟机---虚拟机栈
     - 栈帧
       - [局部变量表](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E8%A1%A8.md)
       - [动态链接](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5.md)
       - [操作数栈](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E6%93%8D%E4%BD%9C%E6%95%B0%E6%A0%88.md)
       - [方法返回地址](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E6%96%B9%E6%B3%95%E8%BF%94%E5%9B%9E%E5%9C%B0%E5%9D%80.md)
-
   - Java虚拟机---堆
     - 线程私有的分配缓冲区 (Thread Local Allocation Buffer，TLAB)
     - 分代理论
@@ -66,9 +66,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
       - 逃逸分析
       - 栈上分配
       - 标量替换
-
 - [HotSpot虚拟机对象](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/HotSpot%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1.md)
   - [JDK之JVM中Java对象的头部占多少byte](https://cloud.tencent.com/developer/article/1413543)
+- [堆、栈、方法区直接内存的异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%A0%86%E3%80%81%E6%A0%88%E3%80%81%E6%96%B9%E6%B3%95%E5%8C%BA%E7%9B%B4%E6%8E%A5%E5%86%85%E5%AD%98%E7%9A%84%E5%BC%82%E5%B8%B8.md)
+- 
 
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
