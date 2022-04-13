@@ -69,7 +69,9 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [HotSpot虚拟机对象](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/HotSpot%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1.md)
   - [JDK之JVM中Java对象的头部占多少byte](https://cloud.tencent.com/developer/article/1413543)
 - [堆、栈、方法区直接内存的异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%A0%86%E3%80%81%E6%A0%88%E3%80%81%E6%96%B9%E6%B3%95%E5%8C%BA%E7%9B%B4%E6%8E%A5%E5%86%85%E5%AD%98%E7%9A%84%E5%BC%82%E5%B8%B8.md)
-- 
+- [JVM虚拟机判断对象“已死”的算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E2%80%9C%E5%B7%B2%E6%AD%BB%E2%80%9D%E7%9A%84%E7%AE%97%E6%B3%95.md)
+  - [Java中的四种引用](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/Java%E4%B8%AD%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8.md)
+
 
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
