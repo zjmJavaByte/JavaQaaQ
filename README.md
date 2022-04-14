@@ -47,7 +47,6 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144259.png" alt="img" style="zoom:50%;" />JDK
 
 - [jdk特性](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/jdk%E7%89%B9%E6%80%A7.md)
-- [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [JDK8的使用技巧](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JDK8%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7.md)
 - [运行时数据区](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F.md)
@@ -72,7 +71,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [JVM虚拟机判断对象“已死”的算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/JVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%88%A4%E6%96%AD%E5%AF%B9%E8%B1%A1%E2%80%9C%E5%B7%B2%E6%AD%BB%E2%80%9D%E7%9A%84%E7%AE%97%E6%B3%95.md)
   - [Java中的四种引用](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/Java%E4%B8%AD%E7%9A%84%E5%9B%9B%E7%A7%8D%E5%BC%95%E7%94%A8.md)
 
-
+- [垃圾收集算法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E7%AE%97%E6%B3%95.md)
+  - Appel式回收-标记复制算法
+  - JVM内存分配担保机制-标记复制算法
+- 根节点枚举、OopMap、安全点、安全区域
+- 记忆集与卡表-跨代引用
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
