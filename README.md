@@ -76,6 +76,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [记忆集与卡表-跨代引用](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%AE%B0%E5%BF%86%E9%9B%86%E4%B8%8E%E5%8D%A1%E8%A1%A8-%E8%B7%A8%E4%BB%A3%E5%BC%95%E7%94%A8.md)
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [jvm内存分配分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/jvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%88%86%E6%9E%90.md)
+- [**类文件结构-Class类文件结构**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-Class%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
+- [**类文件结构-字节码指令简介**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4%E7%AE%80%E4%BB%8B.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
