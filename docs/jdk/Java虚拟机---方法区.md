@@ -23,7 +23,7 @@
 ![](https://cdn.jsdelivr.net/gh/zjmJavaByte/images/img/202204121742650.png)
 
 
-注：随着JDK版本的更新，JDK8 完成了永久代的废弃，通过本地缓存实现的元空间，将上述信息全部保存在了元空间中。
+注：随着JDK版本的更新，JDK8 完成了永久代的废弃，**通过本地缓存实现的元空间**，将上述信息全部保存在了元空间中。
 
 **类型信息：对每个加载的类型（类class、接口interface、枚举enum、注解annotation），jvm必须在方法区中存储一下信息：**
 
