@@ -26,6 +26,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
 - [volatile 关键字详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/volatile%20%E5%85%B3%E9%94%AE%E5%AD%97%E8%AF%A6%E8%A7%A3.md)
 - [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
+- [Java线程池中的各个参数如何合理设置](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E5%90%84%E4%B8%AA%E5%8F%82%E6%95%B0%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E8%AE%BE%E7%BD%AE.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144240.png" alt="img" style="zoom:50%;" />设计模式
 
@@ -76,8 +77,13 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [记忆集与卡表-跨代引用](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%AE%B0%E5%BF%86%E9%9B%86%E4%B8%8E%E5%8D%A1%E8%A1%A8-%E8%B7%A8%E4%BB%A3%E5%BC%95%E7%94%A8.md)
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [jvm内存分配分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/jvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%88%86%E6%9E%90.md)
-- [**类文件结构-Class类文件结构**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-Class%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
-- [**类文件结构-字节码指令简介**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4%E7%AE%80%E4%BB%8B.md)
+- 虚拟机类加载机制
+  - [**类文件结构-Class类文件结构**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-Class%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
+  - [**类文件结构-字节码指令简介**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4%E7%AE%80%E4%BB%8B.md)
+  - [虚拟机类加载机制-类加载时机](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%97%B6%E6%9C%BA.md)
+  - [虚拟机类加载机制-类加载的过程](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E7%9A%84%E8%BF%87%E7%A8%8B.md)
+  - [类加载器-双亲委派模型](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8-%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B.md)
+
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144307.png" alt="img" style="zoom:50%;" />MySQL
 
