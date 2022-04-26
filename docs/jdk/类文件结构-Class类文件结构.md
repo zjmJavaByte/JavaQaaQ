@@ -664,17 +664,27 @@ public class TestClass {
 
 **`static`变量**
 
-​		如果同时使用`final`和`static`来修饰一个变量(按照习惯，这里称“静态常量”更贴切)，并且这个变量的数据类型是**基本类型**或者`java.lang.String`的话，就将会生成`ConstantValue`属性来进行初始化
+​		如果同时使用`final`和`static`来修饰一个变量(按照习惯，这里称“静态常量”更贴切)，并且这个变量的数据类型是**基本类型**或者`java.lang.String`的话，字段表中就将会生成`ConstantValue`属性来进行初始化
 
 ```java
 package interview;
 
 public class TestClass {
-    private final static int A = 0;
-}
+    private final static String A = "123";
+}		
 ```
 
-​		如果这个变量没有被`final`修饰，或者并非基本类型及字符串，则将会选择在`<clinit>()`方法中进行初始化。
+​		如果这个变量没有被`final`修饰，或者并非基本类型及字符串，方法表中则将会选择在`<clinit>()`方法中进行初始化。
+
+```java
+package interview;
+
+public class TestClass {
+    private static String A = "123";
+}	
+```
+
+
 
 
 
