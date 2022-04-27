@@ -181,8 +181,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 6. 《图解http》
 6. 《http2基础教程》
 6. 《高性能mysql》
-6. 《mysql技术内幕 Innodb存储引擎》
-6. 《Redis设计与实现》
+6. [《mysql技术内幕 Innodb存储引擎》](https://www.processon.com/view/link/62183932f346fb06ec04ebf7)
+6. [《Redis设计与实现》](https://www.processon.com/view/link/624172a8f346fb072d11a3f5)
 
 ### [联系作者](https://gitee.com/laoyouji1018/images/raw/master/img/20210727124538.jpg)
 
