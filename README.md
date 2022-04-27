@@ -121,6 +121,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [Spring为什么建议使用构造器来注入](https://github.com/zjmJavaByte/JavaQaaQ/tree/master/docs/spring/Spring为什么建议使用构造器来注入.md)
 - [容器基本用法](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/spring/%E5%AE%B9%E5%99%A8%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.md)
+- [spring中bean的生命周期](https://mp.weixin.qq.com/s/zb6eA3Se0gQoqL8PylCPLw)
+- [spring-aop执行顺序](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/spring-aop%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210828145702.png" alt="img" style="zoom:50%;" />Git
 
@@ -131,9 +133,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 - [使用crontab定时删除文件](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/Linux/%E4%BD%BF%E7%94%A8crontab%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6.md)
 
-### Spring
+### 事物
 
-- [spring-aop执行顺序](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/spring-aop%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F.md)
 - [org.springframework.data.repository 配合事物@Transactional的一个坑](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E4%BA%8B%E5%8A%A1/org.springframework.data.repository%20%E9%85%8D%E5%90%88%E4%BA%8B%E7%89%A9%40Transactional%E7%9A%84%E4%B8%80%E4%B8%AA%E5%9D%91.md)
 
 ### efficient
