@@ -12,6 +12,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [私有构造器相关问题](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E7%A7%81%E6%9C%89%E6%9E%84%E9%80%A0%E5%99%A8%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.md)
 - [Java null强制类型转换](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%20null%20%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2.md)
 - [Java接口成员变量和方法默认修饰符](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%E6%8E%A5%E5%8F%A3%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%96%B9%E6%B3%95%E9%BB%98%E8%AE%A4%E4%BF%AE%E9%A5%B0%E7%AC%A6.md)
+- [重载与重写](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/java%E9%87%8D%E8%BD%BD%E4%B8%8E%E9%87%8D%E5%86%99.md)
+- [类型擦除](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4.md)
 
 ### 集合框架
 
@@ -23,8 +25,11 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144224.png" alt="img" style="zoom: 50%;" />多线程
 
+- [java内存模型](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
 - [volatile 关键字详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/volatile%20%E5%85%B3%E9%94%AE%E5%AD%97%E8%AF%A6%E8%A7%A3.md)
+- [关键字volatile(二)](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%85%B3%E9%94%AE%E5%AD%97volatile.md)
+- [Happens-Before](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Happens-Before.md)
 - [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
 - [Java线程池中的各个参数如何合理设置](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E5%90%84%E4%B8%AA%E5%8F%82%E6%95%B0%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E8%AE%BE%E7%BD%AE.md)
 
