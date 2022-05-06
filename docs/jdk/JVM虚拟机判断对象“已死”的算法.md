@@ -66,7 +66,7 @@ public class ReferenceCountingGC {
 
   所有被同步锁(synchronized关键字)持有的对象。 ·反映Java虚拟机内部情况的JM XBean、JVM TI中注册的回调、本地代码缓存等。
 
-**真正”死亡“**
+### **真正”死亡“**
 
 ​		经过以上两个算法被判断已经不被使用的对象，还需要经过标记、筛选、再标记的流程才会正真被判为死亡。
 
@@ -83,7 +83,54 @@ public class ReferenceCountingGC {
 
 > 这个过程中，如果对象要在finaliz e()中成功拯救自己——只要重新与引用链上的任何一个对象建立关联即可，譬如把自己 (this关键字)赋值给某个类变量或者对象的成员变量，那在第二次标记时它将被移出“即将回收”的集合;
 
-**并发的可达性分析**（并发标记）
+**对象的复活-finalize方法的运用**
+
+```java
+public class CanReliveObj {
+    public static CanReliveObj obj;
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("CanReliveObj finalize called");
+        obj=this;
+    }
+    @Override
+    public String toString(){
+        return "I am CanReliveObj";
+    }
+    public static void main(String[] args) throws InterruptedException{
+        obj=new CanReliveObj();
+15        obj=null;
+        System.gc();
+        Thread.sleep(1000);
+        if(obj==null){
+            System.out.println("obj is null");
+        }else{
+            System.out.println("obj 可用");
+        }
+        System.out.println("第2次 gc");
+24        obj=null;
+        System.gc();
+        Thread.sleep(1000);
+        if(obj==null){
+            System.out.println("obj is null");
+        }else{
+            System.out.println("obj 可用");
+        }
+    }
+}
+
+```
+
+​		可以看到，在代码第15行将obj设置为`null`后，进行`GC`，结果发现`obj`对象复活了。在 第24行，再次释放对象引用并进行`GC`，对象才真正被回收。这是因为第一次进行`GC`时， 在`finalize()`函数调用之前，虽然系统中的引用已经被清除，但是作为实例方法`finalize()`， 对象的`this`引用依然会被传入方法内部，如果引用外泄，对象就会复活，此时，对象又变 为可触及状态。而`finalize()`函数只会被调用一次，在第2次清除对象时，对象就再无机会 复活，因此就会被回收。
+
+​		注意:`finalize()`函数是一个非常糟糕的模式，不推荐读者使用`finalize()`函数释放资 源。
+
+- 第一，因为`finalize()`函数有可能发生引用外泄，在无意中复活对象; 
+
+- 第二，由于`finalize()`函数是被系统调用的，调用时间是不明确的，因此不是一个好的资源释放方案，推荐在`try-catch-finally`语句中进行资源的释放。
+
+### **并发的可达性分析**（并发标记）
 
 [参考文章](https://mp.weixin.qq.com/s?__biz=Mzg3NjU3NTkwMQ==&mid=2247505094&idx=1&sn=90cfd9f65006ba8c6d96ca4d629506cd&source=41#wechat_redirect) [参考文章](https://mp.weixin.qq.com/s/tWsuQ0HD3RAiKzS-w6giqQ)
 
