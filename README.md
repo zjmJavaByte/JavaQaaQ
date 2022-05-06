@@ -32,6 +32,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [Happens-Before](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Happens-Before.md)
 - [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
 - [Java线程池中的各个参数如何合理设置](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E5%90%84%E4%B8%AA%E5%8F%82%E6%95%B0%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E8%AE%BE%E7%BD%AE.md)
+- [锁优化(锁升级)](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E9%94%81%E4%BC%98%E5%8C%96(%E9%94%81%E5%8D%87%E7%BA%A7).md)
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144240.png" alt="img" style="zoom:50%;" />设计模式
 
