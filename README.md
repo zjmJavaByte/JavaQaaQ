@@ -14,6 +14,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [Java接口成员变量和方法默认修饰符](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/Java%E6%8E%A5%E5%8F%A3%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E5%92%8C%E6%96%B9%E6%B3%95%E9%BB%98%E8%AE%A4%E4%BF%AE%E9%A5%B0%E7%AC%A6.md)
 - [重载与重写](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/java%E9%87%8D%E8%BD%BD%E4%B8%8E%E9%87%8D%E5%86%99.md)
 - [类型擦除](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4.md)
+- [String在虚拟机中的实现](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/base/String%E5%9C%A8%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0.md)
 
 ### 集合框架
 
