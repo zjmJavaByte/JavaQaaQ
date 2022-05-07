@@ -164,6 +164,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 ### Springboot
 
 - [springboot接口参数时间转换、解决Date类型参数异常](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot接口参数时间转换、解决Date类型参数异常.md)
+- [springboot之内嵌tomcat的一个注意事项](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/springboot/springboot%E4%B9%8B%E5%86%85%E5%B5%8Ctomcat%E7%9A%84%E4%B8%80%E4%B8%AA%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.md)
 
 ### 网络
 
