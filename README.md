@@ -27,6 +27,7 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144224.png" alt="img" style="zoom: 50%;" />多线程
 
+- [Java多线程基础知识](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md)
 - Java内存模型
   - [java内存模型](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
   - [volatile 关键字详解](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/volatile%20%E5%85%B3%E9%94%AE%E5%AD%97%E8%AF%A6%E8%A7%A3.md)
@@ -38,10 +39,10 @@ Java知识体系的书籍笔记分享（逐渐完善中）
   - [AQS](https://mp.weixin.qq.com/s/trsjgUFRrz40Simq2VKxTA)
   - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
   - [可重入锁之ReentrantLock](https://mp.weixin.qq.com/s/GDno-X1N8zc98h9MZ8_KoA)
-  - 读写锁之ReentrantReadWriteLock
+  - [读写锁之ReentrantReadWriteLock](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/ReentrantReadWriteLock.md)
 - 并发容器
   - [ConcurrentHashMap](https://mp.weixin.qq.com/s/My4P_BBXDnAGX1gh630ZKw)
-  - CopyOnWriteArrayList
+  - [CopyOnWriteArrayList](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/CopyOnWriteArrayList.md)
 - 线程池
   - [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
   - [拒绝策略](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5.md)
@@ -50,6 +51,9 @@ Java知识体系的书籍笔记分享（逐渐完善中）
   - [Java线程池中的各个参数如何合理设置](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E5%90%84%E4%B8%AA%E5%8F%82%E6%95%B0%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E8%AE%BE%E7%BD%AE.md)
 - [synchronized锁优化(锁升级)](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E9%94%81%E4%BC%98%E5%8C%96(%E9%94%81%E5%8D%87%E7%BA%A7).md)
 - [ThreadLocal](https://mp.weixin.qq.com/s/LzkZXPtLW2dqPoz3kh3pBQ)
+- [Executors框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Executors%E6%A1%86%E6%9E%B6.md)
+- [Fork/Join框架](Fork/Join框架)
+- [线上问题定](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E4%B8%8A%E9%97%AE%E9%A2%98%E5%AE%9A%E4%BD%8D.md)位
 
 ### <img src="https://gitee.com/laoyouji1018/images/raw/master/img/20210727144240.png" alt="img" style="zoom:50%;" />设计模式
 
@@ -101,8 +105,8 @@ Java知识体系的书籍笔记分享（逐渐完善中）
 - [垃圾收集器](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8.md)
 - [jvm内存分配分析](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/jvm%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%88%86%E6%9E%90.md)
 - 虚拟机类加载机制
-  - [**类文件结构-Class类文件结构**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-Class%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
-  - [**类文件结构-字节码指令简介**](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4%E7%AE%80%E4%BB%8B.md)
+  - [类文件结构-Class类文件结构](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-Class%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
+  - [类文件结构-字节码指令简介](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84-%E5%AD%97%E8%8A%82%E7%A0%81%E6%8C%87%E4%BB%A4%E7%AE%80%E4%BB%8B.md)
   - [虚拟机类加载机制-类加载时机](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%97%B6%E6%9C%BA.md)
   - [虚拟机类加载机制-类加载的过程](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6-%E7%B1%BB%E5%8A%A0%E8%BD%BD%E7%9A%84%E8%BF%87%E7%A8%8B.md)
   - [类加载器-双亲委派模型](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8-%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%9E%8B.md)
