@@ -4,7 +4,7 @@
 
 ​		要理解轻量级锁，以及后面会讲到的偏向锁的原理和运作过程，必须要对`HotSpot`虚拟机对象的内 存布局(尤其是对象头部分)有所了解。HotSpot虚拟机的对象头`(Object Header)`分为两部分，第一 部分用于存储对象自身的运行时数据，如哈希码`(HashCode)`、`GC`分代年龄`(Generational GC Age) `等。这部分数据的长度在32位和64位的Java虚拟机中分别会占用32个或64个比特，官方称它为`Mark Word`。这部分是实现轻量级锁和偏向锁的关键。另外一部分用于存储指向方法区对象类型数据的指针，如果是数组对象，还会有一个额外的部分用于存储数组长度。（[HotSpot虚拟机对象](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/jdk/HotSpot%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1.md)）
 
-​		由于对象头信息是与对象自身定义的数据无关的额外存储成本，考虑到Java虚拟机的空间使用效 率，`Mark Word`被设计成一个非固定的动态数据结构，以便在极小的空间内存储尽量多的信息。它会 根据对象的状态复用自己的存储空间。例如在32位的`HotSpot`虚拟机中，对象未被锁定的状态下， `Mark Word`的32个比特空间里的25个比特将用于存储**对象哈希码**，4个比特用于存储**对象分代年龄**，2 个比特用于存储**锁标志位**，还有1个比特固定为0(这表示未进入偏向模式)。对象除了未被锁定的正 常状态外，还有**轻量级锁定、重量级锁定、GC标记、可偏向**等几种不同状态，这些状态下对象头的存 储内容如表所示
+​		由于对象头信息是与对象自身定义的数据无关的额外存储成本，考虑到Java虚拟机的空间使用效 率，`Mark Word`被设计成一个非固定的动态数据结构，以便在极小的空间内存储尽量多的信息。它会 根据对象的状态复用自己的存储空间。例如在32位的`HotSpot`虚拟机中，对象未被锁定的状态下， `Mark Word`的32个比特空间里的25个比特将用于存储**对象哈希码**，4个比特用于存储**对象分代年龄**，2 个比特用于存储**锁标志位**，还有1个比特固定为0(这表示未进入偏向模式)。对象除了未被锁定的正常状态外，还有**轻量级锁定、重量级锁定、GC标记、可偏向**等几种不同状态，这些状态下对象头的存 储内容如表所示
 
 ![image-20220506154803018](https://cdn.jsdelivr.net/gh/zjmJavaByte/images/img/202205071441257.png)
 
@@ -149,3 +149,79 @@ public String concatString(String s1, String s2, String s3) { 				StringBuffer s
 ## 锁的优缺点对比
 
 ![image-20220508143858789](https://cdn.jsdelivr.net/gh/zjmJavaByte/images/img/202205081438834.png)
+
+## synchronized底层实现
+
+​		关键字`synchronized`可以修饰方法或者以同步块的形式来进行使用，它主要确保多个线程 在同一个时刻，只能有一个线程处于方法或者同步块中，它保证了线程对变量访问的可见性和排他性。
+
+```java
+public class Synchronized {
+    public static void main(String[] args) {
+        // Synchronized Class对象进行加锁
+        synchronized (Synchronized.class) {
+
+        }
+        // 静态同步方法，对Synchronized Class对象进行加锁
+        m();
+    }
+
+    public static synchronized void m() {
+    }
+}
+```
+
+​		通过`javapc–v Synchronized.class`查看编译后的结果：
+
+>   public static void main(java.lang.String[]);
+>     descriptor: ([Ljava/lang/String;)V
+>     flags: ACC_PUBLIC, ACC_STATIC
+>     Code:
+>       stack=2, locals=3, args_size=1
+>          0: ldc           #2                  // class com/zjmByte/ArtConcurrentBook/chapterFour/Synchronized
+>          2: dup
+>          3: astore_1
+>          4: **monitorenter**
+>          5: aload_1
+>          6: **monitorexit**
+>          7: goto          15
+>         10: astore_2
+>         11: aload_1
+>         12: monitorexit
+>         13: aload_2
+>         14: athrow
+>         15: invokestatic  #3                  // Method m:()V
+>         18: return
+>       Exception table:
+>          from    to  target type
+>              5     7    10   any
+>             10    13    10   any
+>       LineNumberTable:
+>         line 7: 0
+>         line 9: 5
+>         line 11: 15
+>         line 12: 18
+>       StackMapTable: number_of_entries = 2
+>         frame_type = 255 /* full_frame */
+>           offset_delta = 10
+>           locals = [ class "[Ljava/lang/String;", class java/lang/Object ]
+>           stack = [ class java/lang/Throwable ]
+>         frame_type = 250 /* chop */
+>           offset_delta = 4
+>
+>   public static synchronized void m();
+>     descriptor: ()V
+>     flags: ACC_PUBLIC, ACC_STATIC, **ACC_SYNCHRONIZED**
+>     Code:
+>       stack=0, locals=0, args_size=0
+>          0: return
+>       LineNumberTable:
+>         line 15: 0
+> }
+
+​		上面`class`信息中，对于同步块的实现使用了`monitorenter和monitorexit`指令，而同步方法则是依靠方法修饰符上的`ACC_SYNCHRONIZED`来完成的。无论采用哪种方式，其本质是对一 个对象的监视器(`monitor`)进行获取，而这个获取过程是排他的，也就是同一时刻只能有一个线程获取到由`synchronized`所保护对象的监视器。
+
+​		任意一个对象都拥有自己的监视器，当这个对象由同步块或者这个对象的同步方法调用 时，执行方法的线程必须先获取到该对象的监视器才能进入同步块或者同步方法，而没有获 取到监视器(执行该方法)的线程将会被阻塞在同步块和同步方法的入口处，进入`BLOCKED` 状态。对象、对象的监视器、同步队列和执行线程之间的关系。
+
+![image-20220510112408286](https://cdn.jsdelivr.net/gh/zjmJavaByte/images/img/202205101124305.png)
+
+​		任意线程对`Object(Object由synchronized`保护)的访问，首先要获得 `Object`的监视器。如果获取失败，线程进入同步队列，线程状态变为`BLOCKED`。当访问`Object `的前驱(获得了锁的线程)释放了锁，则该释放操作唤醒阻塞在同步队列中的线程，使其重新 尝试对监视器的获取。

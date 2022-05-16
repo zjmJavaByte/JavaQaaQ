@@ -33,9 +33,22 @@ Java知识体系的书籍笔记分享（逐渐完善中）
   - [关键字volatile(二)](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%85%B3%E9%94%AE%E5%AD%97volatile.md)
   - final域的内存语义
   - [Happens-Before](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Happens-Before.md)
+- Java中的锁
+  - Lock接口
+  - [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
+  - 可重入锁之ReentrantLock
+  - 读写锁之ReentrantReadWriteLock
 
-- [`AQS`相关的`UML`图](https://gitee.com/laoyouji1018/images/raw/master/img/20210618140644.png)
-- [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
+- 并发容器
+  - ConcurrentHashMap
+  - CopyOnWriteArrayList
+
+- 线程池
+  - [线程池与Executor框架](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%8EExecutor%E6%A1%86%E6%9E%B6.md)
+  - 拒绝策略
+  - 无界线程安全队列与阻塞队列
+  - 合理地配置线程池
+  
 - [Java线程池中的各个参数如何合理设置](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E4%B8%AD%E7%9A%84%E5%90%84%E4%B8%AA%E5%8F%82%E6%95%B0%E5%A6%82%E4%BD%95%E5%90%88%E7%90%86%E8%AE%BE%E7%BD%AE.md)
 - [锁优化(锁升级)](https://github.com/zjmJavaByte/JavaQaaQ/blob/master/docs/%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E9%94%81%E4%BC%98%E5%8C%96(%E9%94%81%E5%8D%87%E7%BA%A7).md)
 
