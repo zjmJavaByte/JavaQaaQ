@@ -104,8 +104,6 @@ ThreadPoolExecutor 采用了策略的设计模式来处理拒绝任务的几种�
 
 ## 三、如何设置参数
 
-![Java技术迷](https://cdn.jsdelivr.net/gh/zjmJavaByte/images/img/202204261938378.png)
-
 默认值：
 
 ```
