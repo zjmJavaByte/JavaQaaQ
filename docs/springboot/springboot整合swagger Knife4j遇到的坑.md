@@ -13,7 +13,7 @@ server:
 
 查询结果如下
 
-![image-20220530163141080](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202205301631116.png)
+![image-20220530163141080](http://106.14.69.81:9000/picgo/202205301631116.png)
 
 解决方案如下：https://blog.csdn.net/shaotaiban1097/article/details/113629680
 
@@ -219,7 +219,7 @@ public class Swagger2Config implements WebMvcConfigurer {
 
 查询结果如下
 
-![image-20220530163231496](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202205301632527.png)
+![image-20220530163231496](http://106.14.69.81:9000/picgo/202205301632527.png)
 
 解决方案：https://blog.csdn.net/fangyu_/article/details/124059522
 
