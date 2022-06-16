@@ -53,7 +53,7 @@ zhujianmin@zhujianmindeMacBook-Pro ~ % docker inspect es-cluster-net
 
 在你自己的文件夹下分别创建4个文件夹如下：
 
-![image-20220613161952563](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206131619642.png)
+![image-20220613161952563](http://106.14.69.81:9000/picgo/202206162033512_repeat_1655382822557__504816.png)
 
 config里面新增三个配置文件：
 

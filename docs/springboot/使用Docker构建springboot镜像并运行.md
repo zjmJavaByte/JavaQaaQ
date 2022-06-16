@@ -354,7 +354,7 @@ debug：当此属性设置为true时,将打印出logback内部日志信息,实�
 
 ## 使用maven打包应用
 
-![image-20220608174240377](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206081938019.png)
+![image-20220608174240377](http://106.14.69.81:9000/picgo/202206162034835_repeat_1655382845889__611736.png)
 
 - 将打包好的jar上传到`linux`服务器的`/home/docker-project/civil-works-project`文件夹下
 
@@ -389,9 +389,9 @@ MAINTAINER zjm
 docker build -t civil-worksy/civil-works:0.0.1-SNAPSHOT .
 ```
 
-![image-20220608174658006](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206081938063.png)
+![image-20220608174658006](http://106.14.69.81:9000/picgo/202206162034525_repeat_1655382857572__705357.png)
 
-![image-20220608174731677](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206081938101.png)
+![image-20220608174731677](http://106.14.69.81:9000/picgo/202206162034707_repeat_1655382861753__226988.png)
 
 - 运行项目
 

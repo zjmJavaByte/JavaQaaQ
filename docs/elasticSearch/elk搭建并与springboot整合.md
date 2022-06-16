@@ -147,11 +147,11 @@ docker restart logstash
 
 - 去阿里云控制台下的安全组里面开启5601端口访问
 
-![image-20220615151557573](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151516887.png)
+![image-20220615151557573](http://106.14.69.81:9000/picgo/202206162032576_repeat_1655382768626__260791.png)
 
 - 访问`ip:5601`
 
-![](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151518325.png)
+![](http://106.14.69.81:9000/picgo/202206162032200_repeat_1655382771245__383506.png)
 
 ## SpringBoot应用集成Logstash
 
@@ -205,16 +205,16 @@ docker restart logstash
 
 - 运行Springboot应用
 
-![](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151520128.png)
+![](http://106.14.69.81:9000/picgo/202206162033257_repeat_1655382784297__558385.png)
 
 ## 在kibana中查看日志信息
 
 - 创建index pattern
 
-![](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151520523.png)
+![](http://106.14.69.81:9000/picgo/202206162033060_repeat_1655382787112__083283.png)
 
-![](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151521863.png)
+![](http://106.14.69.81:9000/picgo/202206162033024_repeat_1655382791070__982615.png)
 
 - 查看收集的日志
 
-![](https://zjm-picgo.oss-cn-shanghai.aliyuncs.com/202206151521364.png)
+![](http://106.14.69.81:9000/picgo/202206162033899_repeat_1655382793940__331722.png)
